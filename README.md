@@ -144,7 +144,18 @@ This project is created for learning and educational purposes only.
 
 ---
 
+📽️ Full Project Demo:
+https://youtu.be/Iut6qc5w40Y
+
+💻 GitHub: https://github.com/Shazan99v
+💼 LinkedIn: https://www.linkedin.com/in/shazan-gull-15a8773aa/
+📸 Instagram: https://www.instagram.com/shazanwebdeveloper/
+🌐 Portfolio: https://shazanwebdeveloper.netlify.app/
+
 ⭐ If you like this project, don’t forget to star the repo!
+
+
+---
 
 ---
 
@@ -184,3 +195,11 @@ MONGO_URI=your_mongodb_url
 JWT_SECRET=your_secret_key
 EMAIL_USER=your_email
 EMAIL_PASS=email_pass
+
+---
+
+---
+
+## 📽️ Project Demo
+
+[![Watch Demo](https://img.shields.io/badge/Watch-Demo-red?style=for-the-badge&logo=youtube)](https://youtu.be/Iut6qc5w40Y)
