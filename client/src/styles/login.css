@@ -1,0 +1,63 @@
+/* Page specific tweaks */
+
+.login-title {
+  color: var(--color-accent);
+}
+
+/* ================= POPUP ================= */
+
+.popup {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  min-width: 260px;
+  padding: 15px 20px;
+
+  border-radius: 12px;
+  color: white;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  animation: slideIn 0.3s ease;
+  z-index: 9999;
+}
+
+/* SUCCESS */
+.popup.success {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+/* ERROR */
+.popup.error {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.popup button {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.popup button:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

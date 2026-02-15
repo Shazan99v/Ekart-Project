@@ -1,0 +1,170 @@
+/* ============================
+   OVERLAY
+============================ */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(4px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
+}
+
+
+/* ============================
+   POPUP BOX
+============================ */
+
+.popup-box {
+  width: 320px;
+  max-width: 90%;
+
+  background: linear-gradient(
+    135deg,
+    var(--color-bg-secondary),
+    var(--color-bg-main)
+  );
+
+  color: var(--color-text-main);
+
+  padding: 25px;
+  border-radius: var(--radius-lg);
+
+  text-align: center;
+
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+
+  animation: popupScale 0.25s ease-out;
+}
+
+
+/* ============================
+   IMAGE
+============================ */
+
+.popup-box img {
+  width: 90px;
+  height: 90px;
+
+  object-fit: cover;
+  border-radius: var(--radius-md);
+
+  margin: 12px 0;
+
+  border: 1px solid var(--color-border);
+}
+
+
+/* ============================
+   TITLE
+============================ */
+
+.popup-box h3 {
+  margin-bottom: 10px;
+  color: var(--color-text-main);
+  font-weight: 600;
+}
+
+
+/* ============================
+   PRODUCT NAME
+============================ */
+
+.popup-box h4 {
+  margin: 6px 0;
+  font-size: 16px;
+  color: var(--color-text-main);
+}
+
+
+/* ============================
+   PRICE / TEXT
+============================ */
+
+.popup-box p {
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+
+/* ============================
+   ACTIONS
+============================ */
+
+.popup-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+
+/* ============================
+   BUTTONS
+============================ */
+
+.btn-primary,
+.btn-secondary {
+  flex: 1;
+  padding: 8px 10px;
+
+  border: none;
+  border-radius: var(--radius-md);
+
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: var(--transition-fast);
+}
+
+
+/* Continue */
+.btn-secondary {
+  background: var(--color-border);
+  color: var(--color-text-main);
+}
+
+.btn-secondary:hover {
+  background: #475569;
+  transform: translateY(-1px);
+}
+
+
+/* Go to cart */
+.btn-primary {
+  background: var(--color-accent);
+  color: #020617;
+}
+
+.btn-primary:hover {
+  background: var(--color-accent-dark);
+  transform: translateY(-1px);
+}
+
+
+/* ============================
+   ANIMATION
+============================ */
+
+@keyframes popupScale {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

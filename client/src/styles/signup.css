@@ -1,0 +1,22 @@
+/* ============================
+   SIGNUP PAGE STYLES
+============================ */
+
+.signup-card {
+  max-width: 480px;
+}
+
+/* First + Last Name Row */
+
+.signup-row {
+  display: flex;
+  gap: 12px;
+}
+
+/* Stack on Mobile */
+
+@media (max-width: 500px) {
+  .signup-row {
+    flex-direction: column;
+  }
+}

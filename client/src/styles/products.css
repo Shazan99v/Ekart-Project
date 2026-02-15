@@ -1,0 +1,198 @@
+/* ============================
+   LAYOUT
+============================ */
+
+.products-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+/* ============================
+   FILTER PANEL
+============================ */
+
+.filters {
+  background: var(--color-bg-secondary);
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  max-height: fit-content;
+
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+}
+
+
+/* ============================
+   FILTER TITLE
+============================ */
+
+.filter-title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+
+  color: var(--color-text-main);
+
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 8px;
+}
+
+
+/* ============================
+   FILTER GROUP
+============================ */
+
+.filter-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 600;
+
+  color: var(--color-text-main);
+}
+
+
+/* ============================
+   INPUTS
+============================ */
+
+.filters input,
+.filters select,
+.filter-group input,
+.filter-group select {
+  width: 100%;
+  margin-bottom: 10px;
+
+  padding: 8px 10px;
+
+  background: var(--color-bg-main);
+  color: var(--color-text-main);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+
+  outline: none;
+  transition: var(--transition-fast);
+}
+
+.filters input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.filters input:focus,
+.filters select:focus,
+.filter-group input:focus,
+.filter-group select:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 1px var(--color-accent);
+}
+
+
+/* ============================
+   RESET BUTTON
+============================ */
+
+.reset-btn {
+  width: 100%;
+  padding: 10px;
+
+  background: var(--color-error);
+  color: #020617;
+
+  border: none;
+  border-radius: var(--radius-md);
+
+  cursor: pointer;
+  font-weight: 600;
+
+  transition: var(--transition-fast);
+}
+
+.reset-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+
+/* ============================
+   PRODUCTS GRID
+============================ */
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+
+/* ============================
+   PRODUCT CARD
+============================ */
+
+.product-card {
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-lg);
+  padding: 12px;
+
+  text-align: center;
+
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+
+  transition: var(--transition-mid);
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-accent);
+}
+
+
+/* ============================
+   PRODUCT IMAGE
+============================ */
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+
+  object-fit: cover;
+
+  border-radius: var(--radius-md);
+  margin-bottom: 8px;
+
+  border: 1px solid var(--color-border);
+}
+
+
+/* ============================
+   BUTTON
+============================ */
+
+.product-card button {
+  background: var(--color-accent);
+  color: #020617;
+
+  border: none;
+  padding: 8px 12px;
+
+  border-radius: var(--radius-md);
+
+  cursor: pointer;
+  font-weight: 500;
+
+  transition: var(--transition-fast);
+}
+
+.product-card button:hover {
+  background: var(--color-accent-dark);
+  transform: translateY(-1px);
+}

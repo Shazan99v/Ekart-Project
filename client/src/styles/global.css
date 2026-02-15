@@ -1,0 +1,68 @@
+﻿/* ============================
+   DESIGN SYSTEM (VARIABLES)
+============================ */
+
+:root {
+  /* -------- COLORS (60/30/10) -------- */
+
+  /* 60% - Main Background */
+  --color-bg-main: #0f172a;
+
+  /* 30% - Cards / Sections */
+  --color-bg-secondary: #1e293b;
+
+  /* 10% - Accent */
+  --color-accent: #38bdf8;
+  --color-accent-dark: #0ea5e9;
+
+  /* -------- TEXT -------- */
+
+  --color-text-main: #e5e7eb;
+  --color-text-muted: #94a3b8;
+
+  /* -------- BORDERS -------- */
+
+  --color-border: #334155;
+
+  /* -------- STATUS -------- */
+
+  --color-error: #ef4444;
+  --color-success: #22c55e;
+
+  /* -------- FONTS -------- */
+
+  --font-main: "Inter", "Segoe UI", system-ui, sans-serif;
+
+  /* -------- SIZES -------- */
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  --transition-fast: 0.2s ease;
+  --transition-mid: 0.3s ease;
+
+  /* -------- SHADOW -------- */
+
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+
+/* ============================
+   RESET
+============================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+}
+
+body {
+  background: var(--color-bg-main);
+  color: var(--color-text-main);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz

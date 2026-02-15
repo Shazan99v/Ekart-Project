@@ -1,0 +1,114 @@
+/* ===============================
+   PAGE WRAPPER
+================================ */
+
+.success-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fdf2f8, #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ===============================
+   CARD
+================================ */
+
+.success-card {
+  background: #fff;
+  width: 380px;
+  max-width: 95%;
+  padding: 35px 25px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  animation: popIn 0.4s ease;
+}
+
+/* ===============================
+   ICON
+================================ */
+
+.success-card h1 {
+  font-size: 26px;
+  color: #16a34a;
+  margin-bottom: 12px;
+}
+
+/* ===============================
+   TEXT
+================================ */
+
+.success-card p {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+
+.success-card button {
+  width: 100%;
+  padding: 11px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  transition: 0.3s;
+}
+
+/* Primary */
+
+.success-card button:first-of-type {
+  background: linear-gradient(135deg, #ec4899, #db2777);
+  color: white;
+}
+
+/* Secondary */
+
+.success-card button:last-of-type {
+  background: transparent;
+  border: 1px solid #ddd;
+  color: #444;
+}
+
+/* Hover */
+
+.success-card button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* ===============================
+   ANIMATION
+================================ */
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 480px) {
+  .success-card {
+    padding: 25px 20px;
+  }
+
+  .success-card h1 {
+    font-size: 22px;
+  }
+}

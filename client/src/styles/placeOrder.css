@@ -1,0 +1,271 @@
+/* ================================
+   PLACE ORDER PAGE
+================================ */
+
+.place-order {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+/* ================================
+   LEFT SECTION
+================================ */
+
+.checkout-left h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+/* Address Card */
+
+.address-card {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  margin-bottom: 20px;
+
+  transition: var(--transition-fast);
+}
+
+.address-card.active {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 1px var(--color-accent);
+}
+
+.address-card h4 {
+  margin-bottom: 6px;
+}
+
+.address-card p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: 3px;
+}
+
+/* ================================
+   ADD BUTTON
+================================ */
+
+.btn-outline {
+  background: transparent;
+  border: 1px dashed var(--color-accent);
+  color: var(--color-accent);
+
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+
+  transition: var(--transition-fast);
+}
+
+.btn-outline:hover {
+  background: rgba(56, 189, 248, 0.1);
+}
+
+/* ================================
+   FORM
+================================ */
+
+.address-form {
+  background: var(--color-bg-secondary);
+  padding: 25px;
+
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 25px;
+}
+
+.address-form input {
+  width: 100%;
+  padding: 10px 12px;
+
+  margin-bottom: 14px;
+
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+
+  color: var(--color-text-main);
+}
+
+.address-form input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.address-form input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+/* ================================
+   PRIMARY BUTTON
+================================ */
+
+.btn-primary {
+  width: 100%;
+  background: var(--color-accent);
+  color: #020617;
+
+  border: none;
+  padding: 12px;
+
+  border-radius: var(--radius-md);
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.btn-primary:hover {
+  background: var(--color-accent-dark);
+  transform: translateY(-1px);
+}
+
+/* ================================
+   RIGHT SECTION
+================================ */
+
+.checkout-right {
+  background: var(--color-bg-secondary);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  padding: 25px;
+
+  height: fit-content;
+
+  box-shadow: var(--shadow-lg);
+}
+
+.checkout-right h3 {
+  margin-bottom: 20px;
+}
+
+/* Cart Items */
+
+.summary-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 10px;
+
+  font-size: 0.9rem;
+
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.summary-item:last-child {
+  border-bottom: none;
+}
+
+/* ================================
+   PRICE ROWS
+================================ */
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 12px;
+  font-size: 0.95rem;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 20px;
+  padding-top: 12px;
+
+  border-top: 1px solid var(--color-border);
+
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* ================================
+   ADDRESS HEADER
+================================ */
+
+.address-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 8px;
+}
+
+/* ================================
+   ACTION BUTTONS
+================================ */
+
+.address-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* EDIT */
+
+.edit-btn {
+  background: transparent;
+
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+
+  padding: 4px 10px;
+  font-size: 0.8rem;
+
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+
+  transition: var(--transition-fast);
+}
+
+.edit-btn:hover {
+  background: rgba(56, 189, 248, 0.15);
+}
+
+/* DELETE */
+
+.delete-btn {
+  background: transparent;
+
+  border: 1px solid var(--color-error);
+  color: var(--color-error);
+
+  padding: 4px 10px;
+  font-size: 0.8rem;
+
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+
+  transition: var(--transition-fast);
+}
+
+.delete-btn:hover {
+  background: rgba(239, 68, 68, 0.15);
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+  .place-order {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-right {
+    order: -1;
+  }
+}

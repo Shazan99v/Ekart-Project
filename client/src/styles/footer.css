@@ -1,0 +1,176 @@
+/* FOOTER */
+
+.footer {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    #020617,
+    #020617,
+    #020617
+  );
+
+  padding: 80px 6% 30px;
+  overflow: hidden;
+}
+
+
+/* GLOW */
+
+.footer-glow {
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  background: #38bdf860;
+  filter: blur(140px);
+
+  top: -100px;
+  right: -100px;
+}
+
+
+/* CONTAINER */
+
+.footer-container {
+  position: relative;
+  z-index: 5;
+
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 60px;
+}
+
+
+/* BRAND */
+
+.footer-brand h2 {
+  font-size: 2rem;
+  font-weight: 800;
+
+  background: linear-gradient(
+    90deg,
+    #38bdf8,
+    #6366f1
+  );
+
+  -webkit-background-clip: text;
+  color: transparent;
+
+  margin-bottom: 15px;
+}
+
+.footer-brand p {
+  color: var(--color-text-muted);
+  max-width: 300px;
+  line-height: 1.7;
+}
+
+
+/* LINKS */
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-links h4 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.footer-links a {
+  display: block;
+
+  text-decoration: none;
+  color: var(--color-text-muted);
+
+  margin-bottom: 10px;
+
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--color-accent);
+  transform: translateX(5px);
+}
+
+
+/* SOCIAL */
+
+.footer-social h4 {
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+
+  background: rgba(30, 41, 59, 0.7);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: var(--color-text-main);
+
+  border: 1px solid #ffffff15;
+
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: var(--color-accent);
+  color: #020617;
+
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px #38bdf860;
+}
+
+
+/* BOTTOM */
+
+.footer-bottom {
+  margin-top: 60px;
+  padding-top: 25px;
+
+  border-top: 1px solid var(--color-border);
+
+  text-align: center;
+
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+
+  .footer-links div {
+    text-align: left;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-brand p {
+    margin: auto;
+  }
+}
